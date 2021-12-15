@@ -1,0 +1,354 @@
+/////////////////////////
+////////////////////////Media Queries
+
+@media screen and (max-width: 375px) {
+  .header {
+    &__logo-box {
+      padding-right: 0.5rem;
+    }
+    &__logo {
+      width: 11.5rem;
+    }
+    &__navBox {
+      flex-basis: 100%;
+      order: 3;
+    }
+    &__signupLink {
+      justify-content: center;
+      order: 2;
+    }
+  }
+  ul {
+    flex-basis: 100%;
+  }
+  li {
+    width: 100%;
+  }
+  li a {
+    border-top: 0.2rem solid #ffffff;
+    border-bottom: 0.2rem solid #f2f2f2;
+    text-decoration: none;
+    &:hover {
+      border-top: 0.2rem solid #ffffff;
+      border-bottom: 0.2rem solid $color-primary-dark;
+      color: $color-primary-dark;
+    }
+  }
+
+  .section1 {
+    &__searchInput {
+      width: 33rem;
+      margin-bottom: 1.2rem;
+    }
+    &__searchInput--locSymbolBox {
+      width: 4rem;
+    }
+    &__searchInput--locSymbol {
+      font-size: 2.25rem;
+    }
+    &__searchInput--locText {
+      font-size: 1.5rem;
+      padding: 1.2rem;
+    }
+    &__searchInput--btn {
+      display: none;
+    }
+    &__searchInput--magicon {
+      display: block;
+      font-size: 2rem;
+      background-color: $color-primary-dark;
+      padding: 1rem 1rem 0.5rem 1rem;
+      border-radius: 10px;
+    }
+
+    &__filterBox {
+      &--header {
+        flex-basis: 100%;
+        margin-top: 0.5rem;
+      }
+      &--infoTextBox {
+        align-items: flex-start;
+      }
+      &--infoTextBoxIcon {
+        width: 2.25rem;
+      }
+      &--smallInfoText {
+        font-size: 1.35rem;
+        line-height: 1.75rem;
+        margin-bottom: 1.5rem;
+        margin-right: 1rem;
+      }
+    }
+    &__filterBoxLinks {
+      margin: 0.5rem;
+    }
+  }
+
+  .section2 {
+    flex-direction: column-reverse;
+
+    &__mostPop {
+      border-radius: 0;
+      padding: 0 0 2rem 0;
+      margin: 0;
+    }
+    &__mostPopHeader {
+      padding: 1.75rem 1.75rem 0 2.5rem;
+    }
+    &__accoms {
+      background-color: #fff;
+    }
+    &__accomsHeader {
+      padding: 3rem 0.5rem 3rem 0.5rem;
+    }
+  }
+
+  .mostPop__card {
+    width: 32rem;
+    &--textbox {
+      width: 18.7rem;
+    }
+  }
+
+  .accoms__card--picbox {
+    width: 32rem;
+    height: 13.5rem;
+  }
+
+  .section3 {
+    flex-direction: column;
+  }
+
+  .section3__activHeader {
+    padding: 0 0 0 2rem;
+    margin: 1.2rem 0 0 0;
+  }
+
+  .activ__splitcards {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .activOuter {
+    &__cards--full {
+      margin: 2rem 0 2rem 0;
+      width: 33rem;
+      box-shadow: 0 0 0.5rem 0.4rem #dddcdc;
+    }
+    &__cards--largepicbox {
+      width: 33rem;
+      height: 13.5rem;
+    }
+    &__cards--mediumpicbox {
+      width: 33rem;
+      height: 13.5rem;
+    }
+    &__cards--smallpicbox {
+      width: 33rem;
+      height: 13.5rem;
+    }
+    &__cards--cap {
+      width: 33rem;
+      height: 3.5rem;
+    }
+  }
+  .fullFooter {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 705px) {
+  .header {
+    &__logo-box {
+      padding-right: 10rem;
+    }
+    &__logo {
+      width: 11.5rem;
+    }
+    &__navBox {
+      flex-basis: 100%;
+      order: 3;
+    }
+    &__signupLink {
+      width: 11rem;
+      order: 2;
+    }
+  }
+
+  .section1__introText {
+    font-size: 1.5rem;
+  }
+  ul {
+    flex-basis: 100%;
+  }
+  li {
+    width: 100%;
+  }
+  li a {
+    border-bottom: 0.2rem solid #f2f2f2;
+    &:hover {
+      border-top: 0.2rem solid #ffffff;
+      color: #ffffff;
+      border-bottom: 0.2rem solid $color-primary-dark;
+      color: $color-primary-dark;
+    }
+  }
+
+  .section1 {
+    &__searchBox {
+      width: 36rem;
+    }
+    &__searchInput {
+      width: 36rem;
+    }
+    &__searchInput--locSymbolBox {
+      width: 4.5rem;
+    }
+    &__searchInput--locSymbol {
+      padding: 0.5rem;
+      width: 2.5rem;
+      font-size: 2.25rem;
+    }
+    &__searchInput--locText {
+      font-size: 1.5rem;
+      padding: 1.2rem;
+    }
+    &__searchInput--btn {
+      display: none;
+    }
+    &__searchInput--magicon {
+      display: block;
+      width: 4.5rem;
+      font-size: 2rem;
+      text-decoration-color: #ffffff;
+      background-color: $color-primary-dark;
+      padding: 1rem 1.2rem 0.8rem 1.2rem;
+      border-radius: 1rem;
+    }
+    &__filterBox--header {
+      flex-basis: 100%;
+      line-height: 0%;
+    }
+    &__filterBoxLinks {
+      margin-left: 0;
+    }
+    &__filterBoxLinks--moneyIcon {
+      width: 3.5rem;
+    }
+    &__filterBoxLinks--familyIcon {
+      width: 3.75rem;
+    }
+    &__filterBoxLinks--heartIcon {
+      width: 3.5rem;
+    }
+    &__filterBoxLinks--dogIcon {
+      width: 3.5rem;
+    }
+    &__filterBox--infoTextBox p {
+      display: flex;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      padding: 0;
+      margin-left: 0.25rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .section2 {
+    width: 100%;
+    flex-direction: column-reverse;
+    &__mostPop {
+      border-radius: 0;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    &__mostPopHeader {
+      padding-left: 1rem;
+      padding-top: 1.5rem;
+      padding-bottom: 0;
+    }
+  }
+  .section2 {
+    &__accoms {
+      background-color: #ffffff;
+    }
+    &__accomsHeader {
+      padding: 0;
+      margin: 0;
+    }
+    &__accomsEndText {
+      display: flex;
+      justify-content: center;
+      line-height: 0;
+      padding: 0;
+    }
+  }
+
+  .accoms__card {
+    box-shadow: 0 0 0.5rem 0.4rem #f2f2f2;
+    &--picbox {
+      width: 32rem;
+      height: 13.5rem;
+    }
+    &--textbox {
+      padding: 0.6rem 7rem 0.6rem 0.6rem;
+      width: 32rem;
+    }
+  }
+
+  .section3 {
+    &__activHeader {
+      padding: 0 0 1rem 2rem;
+    }
+  }
+
+  .activOuter {
+    &__cards--full {
+      width: 33rem;
+      margin: 1rem;
+    }
+    &__cards--smallpicbox {
+      width: 33rem;
+      height: 10.5rem;
+    }
+    &__cards--mediumpicbox {
+      width: 33rem;
+      height: 15.5rem;
+    }
+    &__cards--largepicbox {
+      width: 33rem;
+      height: 35.5rem;
+    }
+    &__cards--cap {
+      width: 33rem;
+      height: 3.5rem;
+    }
+  }
+
+  .fullFooter {
+    &__box {
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (min-width: 706px) and (max-width: 1199px) {
+  .header {
+    &__logo-box {
+      padding-right: 2rem;
+    }
+  }
+  .section1 {
+    &__filterBox--header {
+      flex-basis: 100%;
+    }
+  }
+  .section2 {
+    flex-direction: column;
+  }
+}

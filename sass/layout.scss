@@ -1,0 +1,268 @@
+/////////////////////////
+//////////////////////// Middle, Section 2 Containers/Element Styles
+
+.section2 {
+  display: flex;
+  flex-basis: 100%;
+  background-color: #ffffff;
+  margin-bottom: 0px;
+  &__accoms {
+    display: flex;
+    flex-basis: 66%;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 0rem 1rem 1rem;
+    background-color: #f2f2f2;
+  }
+  &__accomsHeader {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    padding-left: 3rem;
+    height: 3.6rem;
+  }
+  &__accomsEndText {
+    flex-basis: 100%;
+    padding-left: 2rem;
+  }
+  &__mostPop {
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 32%;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #f2f2f2;
+  }
+  &__mostPopHeader {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    justify-content: space-between;
+    padding-left: 3rem;
+    margin-bottom: 1.4rem;
+    flex-wrap: wrap;
+    &--icon {
+      display: flex;
+      font-size: 2.5rem;
+      margin-right: 1rem;
+      padding: 0;
+    }
+  }
+}
+
+.accoms__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  margin: 0.7rem;
+  box-shadow: 0px 0px 5px 4px #dddcdc;
+  &--picbox {
+    width: 24rem;
+    height: 12rem;
+    border-left: 0.3rem solid #ffffff;
+    border-right: 0.3rem solid #ffffff;
+    border-top: 0.3rem solid #ffffff;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    object-fit: cover;
+  }
+  &--textbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 0.6rem;
+    width: 22.8rem;
+    height: 8rem;
+    border-right: 0.3rem solid #ffffff;
+    border-bottom: 0.3rem solid #ffffff;
+    border-left: 0.3rem solid #ffffff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #ffffff;
+  }
+  &--text {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-left: 0.4rem;
+  }
+}
+
+.card__stars {
+  color: $color-primary-dark;
+  padding-left: 0.2rem;
+  &--grey {
+    padding-left: 0.2rem;
+    color: #dddcdc;
+  }
+}
+
+.mostPop__card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33.8rem;
+  height: 14.5rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem 0.4rem #dddcdc;
+  &--picbox {
+    border-left: 0.3rem solid #ffffff;
+    border-bottom: 0.3rem solid #ffffff;
+    border-top: 0.3rem solid #ffffff;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  &--textbox {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.6rem;
+    width: 20.5rem;
+    height: 14.6rem;
+    border-right: 0.3rem solid #ffffff;
+    border-bottom: 0.3rem solid #ffffff;
+    border-top: 0.3rem solid #ffffff;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #ffffff;
+  }
+  &--text {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0.5rem;
+  }
+}
+
+/////////////////////////
+////////////////////////Lower, Section 3 Containers/Element Styles
+
+.section3 {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  margin-bottom: 4rem;
+  padding-top: 0;
+  &__activHeader {
+    display: flex;
+    flex-basis: 100%;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.activ__splitcards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 48%;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
+
+.activOuter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 48%;
+  justify-content: center;
+  &__cards--full {
+    background-color: #ffffff;
+    margin: 0.5rem;
+    width: 27rem;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 0.5rem 0.4rem #f2f2f2;
+    border-radius: 1rem;
+  }
+  &__cards--largepicbox {
+    width: 27rem;
+    height: 45rem;
+    border-left: 0.3rem solid #ffffff;
+    border-right: 0.3rem solid #ffffff;
+    border-top: 0.3rem solid #ffffff;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    object-fit: cover;
+  }
+  &__cards--mediumpicbox {
+    width: 27rem;
+    height: 18.6rem;
+    border-left: 0.3rem solid #ffffff;
+    border-right: 0.3rem solid #ffffff;
+    border-top: 0.3rem solid #ffffff;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    object-fit: cover;
+  }
+  &__cards--smallpicbox {
+    width: 27rem;
+    height: 16rem;
+    border-left: 0.3rem solid #ffffff;
+    border-right: 0.3rem solid #ffffff;
+    border-top: 0.3rem solid #ffffff;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    object-fit: cover;
+  }
+  &__cards--cap {
+    padding: 0.6rem;
+    width: 27rem;
+    height: 3.5rem;
+    border-right: 0.3rem solid #ffffff;
+    border-bottom: 0.3rem solid #ffffff;
+    border-left: 0.3rem solid #ffffff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #ffffff;
+  }
+}
+
+/////////////////////////
+////////////////////////Footer Containers/Element Styles
+.fullFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-basis: 100%;
+  padding: 3rem;
+  background-color: #f2f2f2;
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 95%;
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 33.3%;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+    &--center {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 33.3%;
+      padding: 1rem;
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 33.3%;
+      padding: 1rem;
+    }
+  }
+}
