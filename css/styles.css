@@ -436,7 +436,8 @@ body {
   justify-content: center; }
   .section1__filterBoxLinks:hover {
     color: #ffffff;
-    background-color: #0065fc; }
+    background-color: #0065fc;
+    cursor: pointer; }
   .section1__filterBoxLinks--moneyIcon {
     display: flex;
     position: absolute;
