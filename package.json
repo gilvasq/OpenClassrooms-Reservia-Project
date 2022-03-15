@@ -1,14 +1,14 @@
 {
-  "name": "reservia",
+  "name": "reservia_f",
   "version": "1.0.0",
-  "description": "Landing page for Reservia",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
-  "author": "Gil V",
+  "author": "GilV",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^7.0.1"
   }
 }
