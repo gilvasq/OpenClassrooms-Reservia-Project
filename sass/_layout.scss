@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+
   margin: 0 auto;
   max-width: 114rem;
   flex-basis: 100%;
@@ -13,24 +14,29 @@
     background-color: $color-white;
     margin: 0 auto;
     width: 100%;
-    height: 7rem;
+    // height: 10rem;
     box-shadow: 0 0.2rem 0.8rem rgba($color-primary-dark, 0.2);
-    @include respond(phone) {
-      height: 14rem;
-    }
+    // @include respond(phone) {
+    //   height: 14rem;
+    // }
   }
   &__logo-img {
-    height: 6.5rem;
+    height: 10.5rem;
+    @include respond(phone) {
+      height: 8rem;
+    }
     margin-left: 2rem;
+    // margin-bottom: 2rem;
   }
   &__nav-box {
     display: flex;
     margin-left: auto;
     align-items: top;
-    height: 7rem;
+    // height: 10rem;
     flex-wrap: wrap;
     order: 2;
     @include respond(phone) {
+      height: 7rem;
       margin-left: 0;
       width: 100%;
       justify-content: center;
@@ -94,10 +100,16 @@
 
 .search {
   &-tools-section {
+    display: flex;
+    flex-direction: column;
     padding: 4rem 2rem 1rem 2rem;
+  }
+  &-intro {
+    text-align: center;
   }
   &-input {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding-top: 1rem;
   }
@@ -139,16 +151,24 @@
   &-filters {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem 1rem 3rem 0rem;
+    align-items: center;
+    padding: 2rem 0rem 3rem 0rem;
   }
   &-filters-title {
     color: $color-primary-dark;
     text-transform: uppercase;
     padding-top: 1rem;
   }
+  &-filters-btn-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    // flex-basis: 100%;
+  }
   &-infonote {
     display: flex;
+    justify-content: center;
     align-items: center;
     &-icon {
       display: flex;
@@ -189,7 +209,6 @@
   }
   &::after {
     content: " ";
-    display: flex;
     background-color: $color-primary-dark;
     width: 15.75rem;
     height: 100%;
@@ -323,8 +342,9 @@
 
       @include respond(tab-land) {
         flex-direction: row;
+        justify-content: space-between;
       }
-      @include respond(phone) {
+      @include respond(tab-port) {
         flex-direction: column;
       }
     }
@@ -465,19 +485,17 @@
 }
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   max-width: 114rem;
-  flex-basis: 100%;
+  width: 100%;
   margin: 0 auto;
-  justify-content: space-between;
+
   @include respond(phone) {
-    flex-direction: column;
-    flex-basis: 70%;
-    justify-content: flex-start;
+    grid-template-columns: 1fr;
   }
 
   &-section {
-    display: flex;
     background-color: $color-primary-medium;
     width: 100%;
     height: 100vh;
@@ -490,12 +508,11 @@
     margin: 1.5rem;
 
     @include respond(phone) {
-      flex-basis: 0;
-      padding-bottom: 2rem;
       text-align: center;
     }
   }
   &__logo {
+    width: 18rem;
     margin-top: -1rem;
   }
 }
