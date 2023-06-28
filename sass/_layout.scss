@@ -32,7 +32,6 @@
     display: flex;
     margin-left: auto;
     align-items: top;
-    // height: 10rem;
     flex-wrap: wrap;
     order: 2;
     @include respond(phone) {
